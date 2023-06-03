@@ -69,16 +69,16 @@ docs via something like
 without having to actually set up and run a development backend.
 
 ```bash
-# save openapi.json to docs/docs/api
-wget localhost:8080/api/v1/openapi.json -O docs/docs/api/openapi.json
+# save openapi.json to docs/docs/api/
+wget localhost:8080/api/v1/openapi.json -O docs/docs/api/backend-openapi.json
 ```
 
 Note: The api docs should be automatically updated by the
-`test-api-contract.yaml` workflow.
+`test-api-contract.yaml` workflow. (TODO)
 
 ## Running Celery Worker(s) for API and periodic tasks
 
-Celery workers are used for Huggiface API calls like toxicity and feature
+Celery workers are used for Huggingface API calls like toxicity and feature
 extraction. Celery Beat along with worker is used for periodic tasks like user
 streak update
 
