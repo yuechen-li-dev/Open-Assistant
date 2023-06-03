@@ -4,7 +4,7 @@
   "config_title": "对话设置",
   "empty": "(无标题)",
   "login_message": "为了使用该服务, 您需要使用以下方式重新登录:",
-  "max_new_tokens": "最大令牌数量",
+  "max_new_tokens": "最大分词数量",
   "model": "模型",
   "parameter_description": {
     "max_new_tokens": "最大 Token(分词) 数量: 该参数告诉模型最多应该为响应生成多少个 Token.",
