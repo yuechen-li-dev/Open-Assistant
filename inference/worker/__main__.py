@@ -40,6 +40,7 @@ def main():
         base_url=settings.inference_server_url,
         basic_auth_username=settings.basic_auth_username,
         basic_auth_password=settings.basic_auth_password,
+        bearer_token=settings.bearer_token,
     )
 
     while True:
@@ -122,9 +123,9 @@ def main():
             time.sleep(5)
         except Exception:
             logger.exception("Error in websocket")
-            logger.warning("Retrying in 5 seconds...")
             if not settings.retry_on_error:
                 sys.exit(1)
+            logger.warning("Retrying in 5 seconds...")
             time.sleep(5)
 
 
